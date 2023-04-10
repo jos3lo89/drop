@@ -1,104 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Dropdown</title>
-    <link rel="stylesheet" href="./estilos.css">
+  <meta charset="UTF-8">
+  <title> Responsive Drop Down Navigation Menu | CodingLab </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    
-    <nav class="nav">
+  <nav>
+    <div class="navbar">
 
-        <div class="nav__container">
+      <i class='bx bx-menu'></i>
 
-            <h1 class="nav__title">AlexCG.</h1>
+      <div class="nav-links">
 
-            <a href="#menu" class="nav__menu">
-                <img src="./assets/menu.svg" class="nav__icon">
-            </a>
+        <div class="sidebar-logo">
+          <!-- <span class="logo-name">CodingLab</span> -->
+          <i class='bx bx-x'></i>
+        </div>
 
-            <a href="#" class="nav__menu nav__menu--second">
-                <img src="./assets/close.svg" class="nav__icon ">
-            </a>
+        <ul class="links">
+          <li><a href="#">HOME</a>
+          </li>
+          <li><a href="#" class="wadafa">HTML & CSS <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i></a>
+            <!-- <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i> -->
 
-            <ul class="dropdown" id="menu">
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Login Forms</a></li>
+              <li><a href="#">Card Design</a></li>
 
-                <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
-                        <img src="./assets/house.svg" class="dropdown__icon">
-                        <span class="dropdown__span">Inicio</span>
-                    </a>
-                </li>
+              <li class="more">
+                <span>
+                  <a href="#">More</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
 
-                <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
-                        <img src="./assets/projects.svg" class="dropdown__icon">
-                        <span class="dropdown__span">Projects</span>
-                        <img src="./assets/down.svg" class="dropdown__arrow">
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
 
-                        <input type="checkbox" class="dropdown__check">
-                    </a>
-
-                    <div class="dropdown__content">
-
-                        <ul class="dropdown__sub">
-
-                            <li class="dropdown__li">
-                                <a href="#" class="dropdown__anchor">Project 1</a>
-                            </li>
-                            <li class="dropdown__li">
-                                <a href="#" class="dropdown__anchor">Project 2</a>
-                            </li>
-                            <li class="dropdown__li">
-                                <a href="#" class="dropdown__anchor">Project 3</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </li>
-
-                <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
-                        <img src="./assets/email.svg" class="dropdown__icon">
-                        <span class="dropdown__span">Contacto</span>
-                        <img src="./assets/down.svg" class="dropdown__arrow">
-
-                        <input type="checkbox" class="dropdown__check">
-                    </a>
-
-                    <div class="dropdown__content">
-
-                        <ul class="dropdown__sub">
-
-                            <li class="dropdown__li">
-                                <a href="#" class="dropdown__anchor">Contact 1</a>
-                            </li>
-                            <li class="dropdown__li">
-                                <a href="#" class="dropdown__anchor">Contact 2</a>
-                            </li>
-                          
-
-                        </ul>
-
-                    </div>
-                </li>
-
-                <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
-                        <img src="./assets/help.svg" class="dropdown__icon">
-                        <span class="dropdown__span">Ayuda</span>
-                    </a>
-                </li>
+              </li>
 
             </ul>
 
-        </div>
+          </li>
 
-    </nav>
+          <li><a href="#" class="wadafa2">JAVASCRIPT</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
 
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+
+      </div>
+
+      
+      
+    </div>
+  </nav>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
